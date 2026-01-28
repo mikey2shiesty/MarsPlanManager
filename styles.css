@@ -783,14 +783,18 @@ ul {
     gap: 32px;
 }
 
-.testimonial-card {
+.testimonials-grid > .testimonial-card {
     background: var(--white);
     border-radius: var(--radius-lg);
     padding: 32px;
     box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .testimonial-content {
+    flex-grow: 1;
     margin-bottom: 24px;
 }
 
@@ -814,6 +818,7 @@ ul {
     display: flex;
     align-items: center;
     gap: 16px;
+    margin-top: auto;
 }
 
 .author-avatar {
