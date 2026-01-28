@@ -3,593 +3,463 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MARS Plan Manager | NDIS Plan Management Excellence</title>
-    <meta name="description" content="MARS Plan Manager - Premium NDIS Plan Management services. Experience peace of mind with real-time budget access, fast invoice processing, and personalized support.">
+    <title>MARS Plan Manager | NDIS Plan Management Australia</title>
+    <meta name="description" content="MARS Plan Manager - Trusted NDIS Plan Management services across Australia. Real-time budget access, fast invoice processing, and personalised support.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Preloader -->
-    <div class="preloader" id="preloader">
-        <div class="loader">
-            <div class="lotus-loader">
-                <svg viewBox="0 0 100 100" class="lotus-svg">
-                    <path class="petal p1" d="M50 20 Q60 35 50 50 Q40 35 50 20" fill="url(#goldGradient)"/>
-                    <path class="petal p2" d="M35 25 Q50 35 50 50 Q35 40 35 25" fill="url(#goldGradient)"/>
-                    <path class="petal p3" d="M65 25 Q50 35 50 50 Q65 40 65 25" fill="url(#goldGradient)"/>
-                    <path class="petal p4" d="M25 35 Q40 42 50 50 Q30 48 25 35" fill="url(#goldGradient)"/>
-                    <path class="petal p5" d="M75 35 Q60 42 50 50 Q70 48 75 35" fill="url(#goldGradient)"/>
-                    <path class="hand" d="M30 60 Q50 55 70 60 Q50 70 30 60" fill="url(#goldGradient)"/>
-                    <defs>
-                        <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                            <stop offset="0%" style="stop-color:#D4AF37"/>
-                            <stop offset="50%" style="stop-color:#F4E4BC"/>
-                            <stop offset="100%" style="stop-color:#B8860B"/>
-                        </linearGradient>
-                    </defs>
-                </svg>
-            </div>
-            <p class="loader-text">MARS Plan Manager</p>
-        </div>
-    </div>
-
-    <!-- Cursor follower -->
-    <div class="cursor-follower" id="cursor"></div>
-
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <a href="#home" class="nav-logo">
-                <img src="Color logo with background.png" alt="MARS Plan Manager" class="logo-img">
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="header-container">
+            <a href="#" class="logo">
+                <img src="Color logo with background.png" alt="MARS Plan Manager">
             </a>
-            <div class="nav-menu" id="nav-menu">
-                <a href="#home" class="nav-link active">Home</a>
+
+            <nav class="nav" id="nav">
+                <a href="#home" class="nav-link">Home</a>
                 <a href="#services" class="nav-link">Services</a>
-                <a href="#about" class="nav-link">About</a>
+                <a href="#who-we-help" class="nav-link">Who We Help</a>
+                <a href="#about" class="nav-link">About Us</a>
                 <a href="#faq" class="nav-link">FAQ</a>
-                <a href="#testimonials" class="nav-link">Testimonials</a>
                 <a href="#contact" class="nav-link">Contact</a>
-                <a href="https://mars.plan-ability.com.au/participant/registration" class="nav-cta" target="_blank">Register Now</a>
+            </nav>
+
+            <div class="header-actions">
+                <a href="tel:0408465159" class="header-phone">
+                    <i class="fas fa-phone"></i>
+                    <span>0408 465 159</span>
+                </a>
+                <a href="https://mars.plan-ability.com.au/participant/registration" class="btn btn-primary" target="_blank">Join MARS</a>
             </div>
-            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle menu">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
         </div>
-    </nav>
+    </header>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="hero-bg">
-            <div class="hero-gradient"></div>
-            <div class="hero-particles" id="particles"></div>
-            <div class="hero-orbs">
-                <div class="orb orb-1"></div>
-                <div class="orb orb-2"></div>
-                <div class="orb orb-3"></div>
-            </div>
-        </div>
-        <div class="hero-content">
-            <div class="hero-badge" data-aos="fade-down">
-                <span class="badge-icon"><i class="fas fa-award"></i></span>
-                <span>Trusted NDIS Plan Managers</span>
-            </div>
-            <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100">
-                <span class="title-line">NDIS Plan Managers</span>
-                <span class="title-highlight">Who Truly Care</span>
-            </h1>
-            <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">
-                Experience peace of mind without delay. We handle the complexities of your NDIS funding so you can focus on what matters most — living your best life.
-            </p>
-            <div class="hero-cta" data-aos="fade-up" data-aos-delay="300">
-                <a href="https://mars.plan-ability.com.au/participant/registration" class="btn btn-primary" target="_blank">
-                    <span>Start Your Journey</span>
-                    <i class="fas fa-arrow-right"></i>
-                </a>
-                <a href="#services" class="btn btn-secondary">
-                    <span>Explore Services</span>
-                </a>
-            </div>
-            <div class="hero-stats" data-aos="fade-up" data-aos-delay="400">
-                <div class="stat">
-                    <span class="stat-number" data-count="100">0</span><span class="stat-suffix">%</span>
-                    <span class="stat-label">NDIS Funded</span>
-                </div>
-                <div class="stat-divider"></div>
-                <div class="stat">
-                    <span class="stat-number" data-count="24">0</span><span class="stat-suffix">hr</span>
-                    <span class="stat-label">Invoice Processing</span>
-                </div>
-                <div class="stat-divider"></div>
-                <div class="stat">
-                    <span class="stat-number" data-count="0">0</span><span class="stat-suffix"></span>
-                    <span class="stat-label">Lock-in Contracts</span>
-                </div>
-            </div>
-        </div>
-        <div class="hero-scroll">
-            <a href="#services" class="scroll-indicator">
-                <span class="scroll-text">Scroll to explore</span>
-                <div class="scroll-line"></div>
-            </a>
-        </div>
-    </section>
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <nav class="mobile-nav">
+            <a href="#home" class="mobile-link">Home</a>
+            <a href="#services" class="mobile-link">Services</a>
+            <a href="#who-we-help" class="mobile-link">Who We Help</a>
+            <a href="#about" class="mobile-link">About Us</a>
+            <a href="#faq" class="mobile-link">FAQ</a>
+            <a href="#contact" class="mobile-link">Contact</a>
+            <a href="https://mars.plan-ability.com.au/participant/registration" class="btn btn-primary btn-full" target="_blank">Join MARS</a>
+        </nav>
+    </div>
 
-    <!-- Services Section -->
-    <section class="services" id="services">
-        <div class="section-bg">
-            <div class="bg-shape bg-shape-1"></div>
-            <div class="bg-shape bg-shape-2"></div>
-        </div>
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <span class="section-tag">What We Offer</span>
-                <h2 class="section-title">Our Premium Services</h2>
-                <p class="section-subtitle">Comprehensive plan management designed around your unique needs</p>
-            </div>
-            <div class="services-grid">
-                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="service-icon">
-                        <div class="icon-bg"></div>
-                        <i class="fas fa-chart-line"></i>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <span>NDIS Registered Plan Manager</span>
                     </div>
-                    <h3>Real-Time Budget Access</h3>
-                    <p>Stay in complete control with transparent, online access to your NDIS budget — available for you, your carer, and your providers anytime, anywhere.</p>
-                    <div class="service-hover-line"></div>
-                </div>
-                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="service-icon">
-                        <div class="icon-bg"></div>
-                        <i class="fas fa-users"></i>
+                    <h1>Your partner in NDIS plan management</h1>
+                    <p>We're passionate about helping you achieve your goals and thrive. Our experienced team supports those navigating the NDIS by managing budgets, handling invoice payments and ensuring your providers are paid on time.</p>
+                    <div class="hero-buttons">
+                        <a href="https://mars.plan-ability.com.au/participant/registration" class="btn btn-primary btn-lg" target="_blank">
+                            Join now
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="tel:0408465159" class="btn btn-outline btn-lg">
+                            <i class="fas fa-phone"></i>
+                            Call us
+                        </a>
                     </div>
-                    <h3>Guidance from Friendly Experts</h3>
-                    <p>No more funding surprises. Our approachable team helps you track your budget and make confident choices every step of the way.</p>
-                    <div class="service-hover-line"></div>
                 </div>
-                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="service-icon">
-                        <div class="icon-bg"></div>
-                        <i class="fas fa-bolt"></i>
-                    </div>
-                    <h3>Fast Invoice Processing</h3>
-                    <p>We process invoices daily to ensure providers are paid quickly and reliably — typically within 1-3 business days.</p>
-                    <div class="service-hover-line"></div>
-                </div>
-                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
-                    <div class="service-icon">
-                        <div class="icon-bg"></div>
-                        <i class="fas fa-laptop"></i>
-                    </div>
-                    <h3>Easy Online Registration</h3>
-                    <p>Get started in minutes with our streamlined online sign-up process. We'll take care of the setup, including contacting your providers.</p>
-                    <div class="service-hover-line"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About/Personalized Section -->
-    <section class="about" id="about">
-        <div class="container">
-            <div class="about-grid">
-                <div class="about-image" data-aos="fade-right">
-                    <div class="image-wrapper">
-                        <div class="image-frame"></div>
-                        <div class="image-content">
-                            <div class="floating-card card-1">
-                                <i class="fas fa-heart"></i>
-                                <span>Personalized Care</span>
-                            </div>
-                            <div class="floating-card card-2">
-                                <i class="fas fa-shield-alt"></i>
-                                <span>100% Secure</span>
-                            </div>
-                            <div class="about-visual">
-                                <div class="visual-circle"></div>
-                                <div class="visual-dots"></div>
-                                <i class="fas fa-hands-holding-child visual-icon"></i>
-                            </div>
+                <div class="hero-image">
+                    <div class="hero-image-wrapper">
+                        <div class="hero-shape"></div>
+                        <div class="hero-icon-card">
+                            <i class="fas fa-hands-holding-child"></i>
                         </div>
                     </div>
                 </div>
-                <div class="about-content" data-aos="fade-left">
-                    <span class="section-tag">Why Choose Us</span>
-                    <h2 class="section-title">Personalised Support Plans That Truly Reflect You</h2>
-                    <p class="about-text">
-                        We understand that no two people are the same. That's why we take the time to truly get to know you—your needs, preferences, and goals.
-                    </p>
-                    <p class="about-text">
-                        Through this personalised approach, we craft a tailored budget and support plan that aligns perfectly with your unique circumstances. Whether you're managing complex supports or just need a little help staying on track, we're here to ensure your NDIS journey is smooth, respectful, and empowering.
-                    </p>
-                    <div class="about-features">
-                        <div class="feature">
-                            <div class="feature-icon"><i class="fas fa-check"></i></div>
-                            <span>Tailored to your unique needs</span>
-                        </div>
-                        <div class="feature">
-                            <div class="feature-icon"><i class="fas fa-check"></i></div>
-                            <span>Face-to-face meetings available</span>
-                        </div>
-                        <div class="feature">
-                            <div class="feature-icon"><i class="fas fa-check"></i></div>
-                            <span>Work with your support team</span>
-                        </div>
-                        <div class="feature">
-                            <div class="feature-icon"><i class="fas fa-check"></i></div>
-                            <span>No lock-in contracts</span>
-                        </div>
-                    </div>
-                    <a href="https://mars.plan-ability.com.au/participant/registration" class="btn btn-primary" target="_blank">
-                        <span>Get Started Today</span>
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
-                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Vision & Values Section -->
-    <section class="values" id="values">
-        <div class="values-bg">
-            <div class="values-gradient"></div>
-        </div>
-        <div class="container">
-            <div class="section-header light" data-aos="fade-up">
-                <span class="section-tag">Our Foundation</span>
-                <h2 class="section-title">Vision & Values</h2>
-                <p class="section-subtitle vision-quote">
-                    "Empowering Dreams, Enabling Lives: Our vision is to empower individuals with disabilities to envision, create, and live the lives they aspire to."
-                </p>
-            </div>
-            <div class="values-grid">
-                <div class="value-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="value-icon"><i class="fas fa-heart"></i></div>
-                    <h3>Empathy & Respect</h3>
-                    <p>We approach every interaction with empathy and respect, recognizing the unique journey and needs of each individual.</p>
+        <!-- Features Section -->
+        <section class="features" id="services">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Why choose MARS Plan Manager?</h2>
+                    <p>What we can do for you</p>
                 </div>
-                <div class="value-card" data-aos="fade-up" data-aos-delay="150">
-                    <div class="value-icon"><i class="fas fa-eye"></i></div>
-                    <h3>Transparency</h3>
-                    <p>Open communication, honesty, and integrity in all our dealings. Every step is clear and understandable.</p>
-                </div>
-                <div class="value-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="value-icon"><i class="fas fa-handshake"></i></div>
-                    <h3>Collaboration</h3>
-                    <p>We work hand in hand with you, your family, and service providers to foster a cohesive partnership.</p>
-                </div>
-                <div class="value-card" data-aos="fade-up" data-aos-delay="250">
-                    <div class="value-icon"><i class="fas fa-star"></i></div>
-                    <h3>Excellence</h3>
-                    <p>Committed to continuous improvement and delivering quality services that exceed expectations.</p>
-                </div>
-                <div class="value-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="value-icon"><i class="fas fa-fist-raised"></i></div>
-                    <h3>Empowerment</h3>
-                    <p>We empower you to take charge of your NDIS journey through informed choices and guidance.</p>
-                </div>
-                <div class="value-card" data-aos="fade-up" data-aos-delay="350">
-                    <div class="value-icon"><i class="fas fa-lightbulb"></i></div>
-                    <h3>Innovation</h3>
-                    <p>Leveraging technology and creative solutions for efficiency and accessibility.</p>
-                </div>
-                <div class="value-card featured" data-aos="fade-up" data-aos-delay="400">
-                    <div class="value-icon"><i class="fas fa-globe"></i></div>
-                    <h3>Social Impact</h3>
-                    <p>Beyond business, we strive to make a positive impact in the lives we serve and the broader community.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section class="faq" id="faq">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <span class="section-tag">Got Questions?</span>
-                <h2 class="section-title">Frequently Asked Questions</h2>
-                <p class="section-subtitle">Everything you need to know about NDIS Plan Management</p>
-            </div>
-            <div class="faq-container">
-                <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
-                    <button class="faq-question">
-                        <span>What is NDIS Plan Management?</span>
-                        <div class="faq-icon"><i class="fas fa-plus"></i></div>
-                    </button>
-                    <div class="faq-answer">
-                        <p>NDIS Plan Management is a support that helps you manage your NDIS funding. A Plan Manager like MARS handles provider payments, keeps track of your budget, and helps you understand your plan—so you can focus on achieving your goals without the stress of financial admin.</p>
-                    </div>
-                </div>
-                <div class="faq-item" data-aos="fade-up" data-aos-delay="150">
-                    <button class="faq-question">
-                        <span>Is Plan Management funded by the NDIS?</span>
-                        <div class="faq-icon"><i class="fas fa-plus"></i></div>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Yes, Plan Management is fully funded under the NDIS. If you choose Plan Management, it will be included in your plan under the category <em>Improved Life Choices</em> and does not take away from your other supports.</p>
-                    </div>
-                </div>
-                <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
-                    <button class="faq-question">
-                        <span>How do I register with MARS Plan Manager?</span>
-                        <div class="faq-icon"><i class="fas fa-plus"></i></div>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Registration is easy! You can:</p>
-                        <ul>
-                            <li><strong>Register online</strong> via our website</li>
-                            <li><strong>Call us directly</strong> at 0408 465 159</li>
-                            <li><strong>Email us</strong> and we'll guide you through the process</li>
-                        </ul>
-                        <p>We'll take care of the setup, including contacting your providers if needed.</p>
-                    </div>
-                </div>
-                <div class="faq-item" data-aos="fade-up" data-aos-delay="250">
-                    <button class="faq-question">
-                        <span>Can I still choose my own providers?</span>
-                        <div class="faq-icon"><i class="fas fa-plus"></i></div>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Absolutely. With Plan Management, you can use both registered and non-registered providers, giving you greater choice and flexibility over who delivers your supports.</p>
-                    </div>
-                </div>
-                <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
-                    <button class="faq-question">
-                        <span>How often are invoices processed?</span>
-                        <div class="faq-icon"><i class="fas fa-plus"></i></div>
-                    </button>
-                    <div class="faq-answer">
-                        <p>We process invoices <strong>daily</strong>, Monday to Friday. Once approved, most providers are paid within <strong>1–3 business days</strong>.</p>
-                    </div>
-                </div>
-                <div class="faq-item" data-aos="fade-up" data-aos-delay="350">
-                    <button class="faq-question">
-                        <span>Can I see how my funds are being spent?</span>
-                        <div class="faq-icon"><i class="fas fa-plus"></i></div>
-                    </button>
-                    <div class="faq-answer">
-                        <p>We provide <strong>real-time budget access</strong> so you, your carer, or provider can view spending, remaining funds, and invoices at any time. We'll also alert you if your funds are running low.</p>
-                    </div>
-                </div>
-                <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
-                    <button class="faq-question">
-                        <span>Do you offer support if I have questions about my plan?</span>
-                        <div class="faq-icon"><i class="fas fa-plus"></i></div>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Yes! Our friendly team is always here to help. Whether you need help understanding your budget, navigating supports, or choosing providers—we're just a phone call or email away. We proudly love supporting our local community. If you're nearby, we're happy to meet face-to-face where needed—we believe in building real, personal relationships.</p>
-                    </div>
-                </div>
-                <div class="faq-item" data-aos="fade-up" data-aos-delay="450">
-                    <button class="faq-question">
-                        <span>Can MARS work with my Support Coordinator?</span>
-                        <div class="faq-icon"><i class="fas fa-plus"></i></div>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Absolutely. We collaborate with your Support Coordinator, Support Worker, or any other trusted person in your care team to ensure seamless communication and plan management.</p>
-                    </div>
-                </div>
-                <div class="faq-item" data-aos="fade-up" data-aos-delay="500">
-                    <button class="faq-question">
-                        <span>Is there a lock-in contract?</span>
-                        <div class="faq-icon"><i class="fas fa-plus"></i></div>
-                    </button>
-                    <div class="faq-answer">
-                        <p>No. You are free to change Plan Managers at any time. If you ever choose to move on, we'll ensure a smooth handover without delay or disruption to your supports.</p>
-                    </div>
-                </div>
-                <div class="faq-item" data-aos="fade-up" data-aos-delay="550">
-                    <button class="faq-question">
-                        <span>What if I'm with another Plan Manager?</span>
-                        <div class="faq-icon"><i class="fas fa-plus"></i></div>
-                    </button>
-                    <div class="faq-answer">
-                        <p>No problem at all—you can change Plan Managers at any time. Once you register with MARS Plan Manager, we'll guide you through the process. You'll need to notify your current Plan Manager that you're making a change, and we'll take care of setting up our service booking. We'll ensure the transition is smooth, so there's no disruption to your supports.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="faq-cta" data-aos="fade-up">
-                <p>Can't find what you're looking for?</p>
-                <a href="mailto:info@marsplanmanager.com.au" class="btn btn-secondary">
-                    <span>Contact Us</span>
-                    <i class="fas fa-envelope"></i>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section class="testimonials" id="testimonials">
-        <div class="testimonials-bg">
-            <div class="testimonial-gradient"></div>
-        </div>
-        <div class="container">
-            <div class="section-header light" data-aos="fade-up">
-                <span class="section-tag">What People Say</span>
-                <h2 class="section-title">Client Testimonials</h2>
-                <p class="section-subtitle">Hear from the families and individuals we've had the privilege to support</p>
-            </div>
-            <div class="testimonials-slider" data-aos="fade-up" data-aos-delay="200">
-                <div class="testimonial-track" id="testimonial-track">
-                    <div class="testimonial-card">
-                        <div class="testimonial-content">
-                            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
-                            <p>"MARS Plan Manager has been incredible. They truly understand our needs and make everything so simple. The team is always available and genuinely cares about our family's wellbeing."</p>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-users"></i>
                         </div>
-                        <div class="testimonial-author">
-                            <div class="author-avatar">
+                        <h3>Feel valued and supported</h3>
+                        <p>Our experienced team of NDIS professionals are here to answer any questions you have, helping empower you to take control of your NDIS funds.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-file-invoice-dollar"></i>
+                        </div>
+                        <h3>Invoices paid promptly</h3>
+                        <p>You can rest easy while we handle payments and process claims on your behalf. Most providers are paid within 1-3 business days.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-pie"></i>
+                        </div>
+                        <h3>Real-time budget access</h3>
+                        <p>View your budget, check your NDIS plan status, and track spending anytime. We'll also alert you if your funds are running low.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-clipboard-check"></i>
+                        </div>
+                        <h3>Track your NDIS budget</h3>
+                        <p>Stay on top of your funding with transparent reporting. Access your spending history and remaining funds at any time.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Who We Help Section -->
+        <section class="who-we-help" id="who-we-help">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Want to join MARS Plan Manager?</h2>
+                    <p>We're here to help participants, providers, and support coordinators</p>
+                </div>
+                <div class="help-cards">
+                    <div class="help-card">
+                        <div class="help-card-content">
+                            <div class="help-icon">
                                 <i class="fas fa-user"></i>
                             </div>
-                            <div class="author-info">
-                                <span class="author-name">Sarah M.</span>
-                                <span class="author-role">NDIS Participant</span>
-                            </div>
+                            <h3>For Participants</h3>
+                            <p>We support NDIS participants across Australia. Chat with one of our friendly team members about your plan management goals and how to join MARS.</p>
                         </div>
-                        <div class="testimonial-rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                    </div>
-                    <div class="testimonial-card">
-                        <div class="testimonial-content">
-                            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
-                            <p>"The real-time budget tracking is a game-changer. I always know exactly where my funding stands. The invoice processing is lightning fast and the support is exceptional."</p>
-                        </div>
-                        <div class="testimonial-author">
-                            <div class="author-avatar">
-                                <i class="fas fa-user"></i>
-                            </div>
-                            <div class="author-info">
-                                <span class="author-name">Michael T.</span>
-                                <span class="author-role">NDIS Participant</span>
-                            </div>
-                        </div>
-                        <div class="testimonial-rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                    </div>
-                    <div class="testimonial-card">
-                        <div class="testimonial-content">
-                            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
-                            <p>"Switching to MARS was the best decision we made. The personalised approach and genuine care sets them apart. They treat us like family, not just another client."</p>
-                        </div>
-                        <div class="testimonial-author">
-                            <div class="author-avatar">
-                                <i class="fas fa-user"></i>
-                            </div>
-                            <div class="author-info">
-                                <span class="author-name">Jennifer L.</span>
-                                <span class="author-role">Family Carer</span>
-                            </div>
-                        </div>
-                        <div class="testimonial-rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-nav">
-                    <button class="testimonial-btn prev" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
-                    <div class="testimonial-dots" id="testimonial-dots"></div>
-                    <button class="testimonial-btn next" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <div class="contact-grid">
-                <div class="contact-info" data-aos="fade-right">
-                    <span class="section-tag">Get In Touch</span>
-                    <h2 class="section-title">Let's Start Your Journey</h2>
-                    <p class="contact-text">
-                        Ready to experience stress-free NDIS plan management? We're here to help you every step of the way. Reach out today and discover the MARS difference.
-                    </p>
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-phone"></i>
-                            </div>
-                            <div class="contact-content">
-                                <span class="contact-label">Phone</span>
-                                <a href="tel:0408465159" class="contact-value">0408 465 159</a>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div class="contact-content">
-                                <span class="contact-label">Email</span>
-                                <a href="mailto:info@marsplanmanager.com.au" class="contact-value">info@marsplanmanager.com.au</a>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-clock"></i>
-                            </div>
-                            <div class="contact-content">
-                                <span class="contact-label">Business Hours</span>
-                                <span class="contact-value">Monday - Friday</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="contact-cta">
                         <a href="https://mars.plan-ability.com.au/participant/registration" class="btn btn-primary" target="_blank">
-                            <span>Register Online</span>
+                            Join now
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    <div class="help-card">
+                        <div class="help-card-content">
+                            <div class="help-icon">
+                                <i class="fas fa-building"></i>
+                            </div>
+                            <h3>For Providers</h3>
+                            <p>We are here to help you save time and effort, so you can focus on what you do best. Ensure your invoices are paid promptly and reliably.</p>
+                        </div>
+                        <a href="#contact" class="btn btn-primary">
+                            Contact us
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    <div class="help-card">
+                        <div class="help-card-content">
+                            <div class="help-icon">
+                                <i class="fas fa-people-arrows"></i>
+                            </div>
+                            <h3>For Support Coordinators</h3>
+                            <p>Refer your participants to MARS for NDIS plan management, ensuring their budgets are handled efficiently and payments are made on time.</p>
+                        </div>
+                        <a href="#contact" class="btn btn-primary">
+                            Refer now
                             <i class="fas fa-arrow-right"></i>
                         </a>
                     </div>
                 </div>
-                <div class="contact-form-wrapper" data-aos="fade-left">
-                    <div class="form-card">
-                        <h3>Send us a Message</h3>
-                        <form class="contact-form" id="contact-form">
-                            <div class="form-group">
-                                <input type="text" id="name" name="name" required>
-                                <label for="name">Your Name</label>
-                                <span class="form-line"></span>
+            </div>
+        </section>
+
+        <!-- CTA Banner -->
+        <section class="cta-banner">
+            <div class="container">
+                <div class="cta-content">
+                    <div class="cta-icon">
+                        <i class="fas fa-exchange-alt"></i>
+                    </div>
+                    <div class="cta-text">
+                        <h3>Thinking about changing your plan manager?</h3>
+                        <p>Contact our friendly team today, and we'll guide you through the switching process to ensure your supports continue without interruption.</p>
+                    </div>
+                </div>
+                <a href="tel:0408465159" class="btn btn-white">
+                    <i class="fas fa-phone"></i>
+                    Call 0408 465 159
+                </a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about" id="about">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-content">
+                        <h2>We put you first</h2>
+                        <p>At MARS Plan Manager, we understand that no two people are the same. That's why we take the time to truly get to know you—your needs, preferences, and goals.</p>
+                        <p>Through this personalised approach, we craft a tailored budget and support plan that aligns perfectly with your unique circumstances. Whether you're managing complex supports or just need a little help staying on track, we're here to ensure your NDIS journey is smooth, respectful, and empowering.</p>
+                        <p>We proudly love supporting our local community. If you're nearby, we're happy to meet face-to-face where needed—we believe in building real, personal relationships.</p>
+
+                        <div class="about-values">
+                            <div class="value-item">
+                                <i class="fas fa-heart"></i>
+                                <span>Empathy & Respect</span>
                             </div>
-                            <div class="form-group">
-                                <input type="email" id="email" name="email" required>
-                                <label for="email">Email Address</label>
-                                <span class="form-line"></span>
+                            <div class="value-item">
+                                <i class="fas fa-eye"></i>
+                                <span>Transparency</span>
                             </div>
-                            <div class="form-group">
-                                <input type="tel" id="phone" name="phone" required>
-                                <label for="phone">Phone Number</label>
-                                <span class="form-line"></span>
+                            <div class="value-item">
+                                <i class="fas fa-handshake"></i>
+                                <span>Collaboration</span>
                             </div>
-                            <div class="form-group">
-                                <textarea id="message" name="message" rows="4" required></textarea>
-                                <label for="message">Your Message</label>
-                                <span class="form-line"></span>
+                            <div class="value-item">
+                                <i class="fas fa-star"></i>
+                                <span>Excellence</span>
                             </div>
-                            <button type="submit" class="btn btn-primary btn-full">
-                                <span>Send Message</span>
-                                <i class="fas fa-paper-plane"></i>
-                            </button>
-                        </form>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <div class="about-image-wrapper">
+                            <div class="about-shape"></div>
+                            <div class="about-quote">
+                                <p>"Empowering Dreams, Enabling Lives"</p>
+                                <span>Our Vision</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="testimonials" id="testimonials">
+            <div class="container">
+                <div class="section-header">
+                    <h2>What our clients say</h2>
+                    <p>Hear from the families and individuals we've had the privilege to support</p>
+                </div>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"MARS Plan Manager has been incredible. They truly understand our needs and make everything so simple. The team is always available and genuinely cares about our family's wellbeing."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">S</div>
+                            <div class="author-info">
+                                <strong>Sarah M.</strong>
+                                <span>NDIS Participant</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"The real-time budget tracking is a game-changer. I always know exactly where my funding stands. The invoice processing is lightning fast and the support is exceptional."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">M</div>
+                            <div class="author-info">
+                                <strong>Michael T.</strong>
+                                <span>NDIS Participant</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"Switching to MARS was the best decision we made. The personalised approach and genuine care sets them apart. They treat us like family, not just another client."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">J</div>
+                            <div class="author-info">
+                                <strong>Jennifer L.</strong>
+                                <span>Family Carer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq" id="faq">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Frequently asked questions</h2>
+                </div>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>What is NDIS Plan Management?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>NDIS Plan Management is a support that helps you manage your NDIS funding. A Plan Manager like MARS handles provider payments, keeps track of your budget, and helps you understand your plan—so you can focus on achieving your goals without the stress of financial admin.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Is Plan Management funded by the NDIS?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes, Plan Management is fully funded under the NDIS. If you choose Plan Management, it will be included in your plan under the category <em>Improved Life Choices</em> and does not take away from your other supports.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>How do I register with MARS Plan Manager?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Registration is easy! You can:</p>
+                            <ul>
+                                <li><strong>Register online</strong> via our website</li>
+                                <li><strong>Call us directly</strong> at 0408 465 159</li>
+                                <li><strong>Email us</strong> and we'll guide you through the process</li>
+                            </ul>
+                            <p>We'll take care of the setup, including contacting your providers if needed.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Can I still choose my own providers?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Absolutely. With Plan Management, you can use both registered and non-registered providers, giving you greater choice and flexibility over who delivers your supports.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>How often are invoices processed?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>We process invoices <strong>daily</strong>, Monday to Friday. Once approved, most providers are paid within <strong>1–3 business days</strong>.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Can I see how my funds are being spent?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>We provide <strong>real-time budget access</strong> so you, your carer, or provider can view spending, remaining funds, and invoices at any time. We'll also alert you if your funds are running low.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Is there a lock-in contract?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>No. You are free to change Plan Managers at any time. If you ever choose to move on, we'll ensure a smooth handover without delay or disruption to your supports.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>How do I switch from my current plan manager to MARS?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>No problem at all—you can change Plan Managers at any time. Once you register with MARS Plan Manager, we'll guide you through the process. You'll need to notify your current Plan Manager that you're making a change, and we'll take care of setting up our service booking. We'll ensure the transition is smooth, so there's no disruption to your supports.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2>We're here to help</h2>
+                    <p>Contact our friendly team today</p>
+                </div>
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h3>Call us</h3>
+                        <p>Our team is here Monday to Friday to chat through any questions you may have.</p>
+                        <a href="tel:0408465159" class="contact-link">
+                            <i class="fas fa-phone"></i>
+                            0408 465 159
+                        </a>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email us</h3>
+                        <p>Send us an email and we'll get back to you as soon as possible.</p>
+                        <a href="mailto:info@marsplanmanager.com.au" class="contact-link">
+                            <i class="fas fa-envelope"></i>
+                            info@marsplanmanager.com.au
+                        </a>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-user-plus"></i>
+                        </div>
+                        <h3>Join online</h3>
+                        <p>Register with MARS Plan Manager in just a few minutes through our online form.</p>
+                        <a href="https://mars.plan-ability.com.au/participant/registration" class="contact-link" target="_blank">
+                            <i class="fas fa-arrow-right"></i>
+                            Register now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="footer-top">
+        <div class="footer-main">
             <div class="container">
                 <div class="footer-grid">
                     <div class="footer-brand">
                         <img src="Color logo with background.png" alt="MARS Plan Manager" class="footer-logo">
                         <p>Empowering individuals with disabilities to live the lives they aspire to through seamless NDIS plan management.</p>
-                        <div class="footer-social">
-                            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
                     </div>
                     <div class="footer-links">
                         <h4>Quick Links</h4>
                         <ul>
                             <li><a href="#home">Home</a></li>
                             <li><a href="#services">Services</a></li>
+                            <li><a href="#who-we-help">Who We Help</a></li>
                             <li><a href="#about">About Us</a></li>
                             <li><a href="#faq">FAQ</a></li>
                             <li><a href="#contact">Contact</a></li>
@@ -605,11 +475,26 @@
                         </ul>
                     </div>
                     <div class="footer-contact">
-                        <h4>Contact Us</h4>
+                        <h4>Get in Touch</h4>
                         <ul>
-                            <li><i class="fas fa-phone"></i> <a href="tel:0408465159">0408 465 159</a></li>
-                            <li><i class="fas fa-envelope"></i> <a href="mailto:info@marsplanmanager.com.au">info@marsplanmanager.com.au</a></li>
+                            <li>
+                                <a href="tel:0408465159">
+                                    <i class="fas fa-phone"></i>
+                                    0408 465 159
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:info@marsplanmanager.com.au">
+                                    <i class="fas fa-envelope"></i>
+                                    info@marsplanmanager.com.au
+                                </a>
+                            </li>
                         </ul>
+                        <div class="footer-social">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -617,18 +502,13 @@
         <div class="footer-bottom">
             <div class="container">
                 <p>&copy; 2026 MARS Plan Manager. All Rights Reserved.</p>
-                <div class="footer-bottom-links">
+                <div class="footer-legal">
                     <a href="#">Privacy Policy</a>
                     <a href="#">Terms of Service</a>
                 </div>
             </div>
         </div>
     </footer>
-
-    <!-- Back to Top -->
-    <button class="back-to-top" id="backToTop">
-        <i class="fas fa-chevron-up"></i>
-    </button>
 
     <script src="script.js"></script>
 </body>
