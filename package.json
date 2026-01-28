@@ -1,0 +1,13 @@
+{
+  "name": "mars-plan-manager",
+  "version": "1.0.0",
+  "description": "MARS Plan Manager - NDIS Plan Management Website",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0"
+  }
+}
