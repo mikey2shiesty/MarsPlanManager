@@ -726,10 +726,10 @@ ul {
     padding: 40px;
 }
 
-.about-shape {
+.about-img {
     width: 100%;
     aspect-ratio: 1;
-    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+    object-fit: cover;
     border-radius: var(--radius-xl);
 }
 
