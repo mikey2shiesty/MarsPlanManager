@@ -882,6 +882,11 @@ ul {
     border: none;
     cursor: pointer;
     text-align: left;
+    list-style: none;
+}
+
+.faq-question::-webkit-details-marker {
+    display: none;
 }
 
 .faq-question span {
@@ -898,18 +903,12 @@ ul {
     transition: var(--transition);
 }
 
-.faq-item.active .faq-question i {
+.faq-item[open] .faq-question i {
     transform: rotate(180deg);
 }
 
 .faq-answer {
-    max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease;
-}
-
-.faq-item.active .faq-answer {
-    max-height: 500px;
 }
 
 .faq-answer p {
